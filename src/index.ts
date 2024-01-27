@@ -25,3 +25,12 @@ const enum Size2 {small = 's' , medium = 'm', large = 'l'}
 let size1: Size = Size.large;
 let size2: Size2 = Size2.large
 console.log(size1, size2);
+
+function calculate(tax: number, amount = 30_000): number {
+    if(amount < 50_000)
+        return tax * 0.1;
+    else 
+        return tax * 0.2;
+}
+
+calculate(20);
