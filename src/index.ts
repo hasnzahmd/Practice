@@ -19,3 +19,9 @@ numbers[1] = 2;
 console.log(numbers.forEach(n=>n.toFixed));
 
 let user: [number, string] = [1, 'jhon'];
+
+enum Size {small = 1 , medium, large}
+const enum Size2 {small = 's' , medium = 'm', large = 'l'}
+let size1: Size = Size.large;
+let size2: Size2 = Size2.large
+console.log(size1, size2);
