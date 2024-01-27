@@ -7,3 +7,7 @@ let num = 123_456_789;
 let course = "typescript";
 let is_published = false;
 
+function render(document){
+    console.log(document);
+    
+}
