@@ -18,3 +18,4 @@ numbers[1] = 2;
 
 console.log(numbers.forEach(n=>n.toFixed));
 
+let user: [number, string] = [1, 'jhon'];
