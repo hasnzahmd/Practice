@@ -86,3 +86,10 @@ let textBox: UIWidget = {
 }
 textBox.drag();
 textBox.resize();
+
+//literal types
+type Quantity = 50|70|80;
+const quantity: Quantity = 50;
+
+type Metric = 'cm' | 'inch';
+const metricSize: Metric = 'cm'
