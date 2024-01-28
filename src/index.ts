@@ -36,12 +36,14 @@ function calculate(tax: number, amount = 30_000): number {
 calculate(20);
 
 
-let employee: {
+type Employee = {
     readonly id: number, 
     name: string, 
     fax ?: any,
     date: (date: Date)  => void
-} = {
+}
+
+let employee: Employee = {
     id : 1,
     name: 'ali',
     date: (date: Date) => {
