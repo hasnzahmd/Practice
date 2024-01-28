@@ -30,4 +30,13 @@ function calculate(tax, amount = 30000) {
         return tax * 0.2;
 }
 calculate(20);
+let employee = {
+    id: 1,
+    name: 'ali',
+    date: (date) => {
+        console.log(date);
+    }
+};
+employee.fax = '121';
+console.log(employee);
 //# sourceMappingURL=index.js.map
