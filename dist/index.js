@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 let age = 20;
 if (age < 30)
     age += 10;
@@ -51,4 +52,20 @@ function kgToLbs(weight) {
     }
 }
 console.log(kgToLbs('10'), kgToLbs(60));
+let textBox = {
+    drag: () => { console.log('dragging'); },
+    resize: () => { console.log('resizing'); }
+};
+textBox.drag();
+textBox.resize();
+const quantity = 50;
+const metricSize = 'cm';
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date() };
+}
+let customer = getCustomer(0);
+console.log((_a = customer === null || customer === void 0 ? void 0 : customer.birthday) === null || _a === void 0 ? void 0 : _a.getFullYear());
+numbers === null || numbers === void 0 ? void 0 : numbers[0];
+let log = null;
+log === null || log === void 0 ? void 0 : log('s');
 //# sourceMappingURL=index.js.map
