@@ -34,3 +34,21 @@ function calculate(tax: number, amount = 30_000): number {
 }
 
 calculate(20);
+
+
+let employee: {
+    readonly id: number, 
+    name: string, 
+    fax ?: any,
+    date: (date: Date)  => void
+} = {
+    id : 1,
+    name: 'ali',
+    date: (date: Date) => {
+        console.log(date);  
+    }
+}
+
+employee.fax = '121'
+
+console.log(employee);
