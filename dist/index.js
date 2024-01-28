@@ -39,4 +39,16 @@ let employee = {
 };
 employee.fax = '121';
 console.log(employee);
+function kgToLbs(weight) {
+    if (typeof weight === "string") {
+        let value = parseInt(weight);
+        if (isNaN(value))
+            throw new Error("Invalid input");
+        return value * 2.2;
+    }
+    else {
+        return weight * 2.2;
+    }
+}
+console.log(kgToLbs('10'), kgToLbs(60));
 //# sourceMappingURL=index.js.map
