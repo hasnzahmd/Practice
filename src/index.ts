@@ -93,3 +93,23 @@ const quantity: Quantity = 50;
 
 type Metric = 'cm' | 'inch';
 const metricSize: Metric = 'cm'
+
+//optional chaining
+type Customer = {
+    birthday: Date
+}
+
+function getCustomer(id: number) : Customer | null | undefined {
+    return id === 0 ? null : {birthday : new Date()}
+}
+
+let customer = getCustomer(0);
+//optional property access operator
+console.log(customer?.birthday?.getFullYear());
+
+//optional element access operator
+numbers?.[0];
+
+//optional call
+let log: any = null;
+log?.('s') // here log is being called as function although it is a variable
