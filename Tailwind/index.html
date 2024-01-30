@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>*{font-family:'Poppins','sans-serif';}</style>
     <title>Tailwind</title>
 </head>
 <body>
-    <div>
-        <nav>
-            <img src="./images/logo.png" alt="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
+    <div class="container min-h-screen bg-[url('./images/Image.png')] bg-center bg-cover">
+        <nav class="flex items-center justify-between px-28 py-5">
+            <img src="./images/logo.png" alt="logo" class="w-40 cursor-pointer">
+            <ul class="flex gap-14">
+                <li><a href="#" class="no-underline text-white">Home</a></li>
+                <li><a href="#" class="no-underline text-white">About</a></li>
+                <li><a href="#" class="no-underline text-white">Features</a></li>
+                <li><a href="#" class="no-underline text-white">Contact</a></li>
             </ul>
-            <img src="./images/cart.png" alt="cart">
+            <img src="./images/cart.png" alt="cart" class="w-8 cursor-pointer">
         </nav>
     </div>
 
