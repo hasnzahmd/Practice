@@ -1,10 +1,12 @@
 void main() {
+
   //Variables and Types
   var name = 'John Doe'; // Automatically inferred to be String
   int age = 30; // Explicitly typed as integer
   double height = 5.9; // Double for floating-point numbers
   bool isRegistered = true; // Boolean values
   print('$name is $age years old, $height tall, and registered: $isRegistered');
+
 
   //Control Flow Statements
   int score = 90;
@@ -26,9 +28,11 @@ void main() {
     count++;
   }
 
+
   //Classes and Objects
   var person = Person('John', 28);
   person.describe();
+
 
   //Collections: Working with lists, sets, and maps
   List<String> fruits = ['apple', 'banana', 'cherry'];
@@ -39,10 +43,12 @@ void main() {
   print(oddNumbers);
   print(person2);
 
+
   // Creating a simple binary tree
   var root = TreeNode(1,
       left: TreeNode(2, left: TreeNode(4), right: TreeNode(5)),
       right: TreeNode(3));
+
 
   // Example function to traverse the tree (in-order)
   void inOrderTraversal(TreeNode? node) {
@@ -54,6 +60,7 @@ void main() {
 
   inOrderTraversal(root);
 }
+
 
 class Person {
   String name;
