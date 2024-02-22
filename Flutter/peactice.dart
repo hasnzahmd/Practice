@@ -52,6 +52,7 @@ void main() {
     inOrderTraversal(node.right);
   }
 
+  inOrderTraversal(root);
 }
 
 class Person {
