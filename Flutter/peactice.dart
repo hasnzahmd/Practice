@@ -38,6 +38,11 @@ void main() {
   print(fruits);
   print(oddNumbers);
   print(person2);
+
+  // Creating a simple binary tree
+  var root = TreeNode(1,
+      left: TreeNode(2, left: TreeNode(4), right: TreeNode(5)),
+      right: TreeNode(3));
 }
 
 class Person {
