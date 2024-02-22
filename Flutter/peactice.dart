@@ -43,6 +43,15 @@ void main() {
   var root = TreeNode(1,
       left: TreeNode(2, left: TreeNode(4), right: TreeNode(5)),
       right: TreeNode(3));
+
+  // Example function to traverse the tree (in-order)
+  void inOrderTraversal(TreeNode? node) {
+    if (node == null) return;
+    inOrderTraversal(node.left);
+    print(node.value);
+    inOrderTraversal(node.right);
+  }
+
 }
 
 class Person {
