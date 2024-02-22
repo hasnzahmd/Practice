@@ -6,4 +6,25 @@ void main() {
   bool isRegistered = true; // Boolean values
   print('$name is $age years old, $height tall, and registered: $isRegistered');
 
+  //Control Flow Statements
+  int score = 90;
+  if (score >= 90) {
+    print('Excellent');
+  } else if (score >= 75) {
+    print('Very Good');
+  } else {
+    print('Keep Trying');
+  }
+
+  for (var i = 0; i < 5; i++) {
+    print('Number $i');
+  }
+
+  int count = 0;
+  while (count < 3) {
+    print('Count is $count');
+    count++;
+  }
+
+  
 }
