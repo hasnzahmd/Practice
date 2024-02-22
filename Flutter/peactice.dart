@@ -30,9 +30,9 @@ void main() {
   var person = Person('John', 28);
   person.describe();
 
-  //Collections: Working with lists, sets, and maps.
+  //Collections: Working with lists, sets, and maps
   List<String> fruits = ['apple', 'banana', 'cherry'];
-  Set<int> oddNumbers = {1, 3, 5};
+  Set<int> oddNumbers = {1, 3, 3, 5};
   Map<String, dynamic> person2 = {'name': 'John', 'age': 30};
 
   print(fruits);
