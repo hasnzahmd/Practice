@@ -26,5 +26,20 @@ void main() {
     count++;
   }
 
+  //Classes and Objects
+  var person = Person('John', 28);
+  person.describe();
+
   
+}
+
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, this.age);
+
+  void describe() {
+    print('Name: $name, Age: $age');
+  }
 }
