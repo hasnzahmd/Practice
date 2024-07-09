@@ -1,5 +1,4 @@
-void main() {
-
+Future<void> main() async {
   //Variables and Types
   var name = 'John Doe'; // Automatically inferred to be String
   int age = 30; // Explicitly typed as integer
@@ -33,12 +32,15 @@ void main() {
 
   //Collections: Working with lists, sets, and maps
   List<String> fruits = ['apple', 'banana', 'cherry'];
-  Set<int> oddNumbers = {1, 3, 3, 5};
+  Set<int> oddNumbers = {1, 3, 4, 5};
   Map<String, dynamic> person2 = {'name': 'John', 'age': 30};
 
   print(fruits);
   print(oddNumbers);
   print(person2);
+
+  const hello = 'Hello, World!';
+  print(hello);
 
   // Creating a simple binary tree
   var root = TreeNode(1,
@@ -55,7 +57,6 @@ void main() {
 
   inOrderTraversal(root);
 }
-
 
 class Person {
   String name;
